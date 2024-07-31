@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Editing Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Video Editing Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a professional video editor with 3 years of experience in creativity and all aspects of video editing.</p>
+        <button onclick="showWork()">Apply Now</button>
+    </section>
+
+    <section id="work" class="hidden">
+        <h2>My Work</h2>
+        <div class="video-thumbnail" onclick="playVideo('https://www.youtube.com/embed/c-qXqjN1l7c')">
+            <img src="https://img.youtube.com/vi/c-qXqjN1l7c/0.jpg" alt="Video Thumbnail 1">
+        </div>
+        <div class="video-thumbnail" onclick="playVideo('https://www.youtube.com/embed/LpottPFTJAw')">
+            <img src="https://img.youtube.com/vi/LpottPFTJAw/0.jpg" alt="Video Thumbnail 2">
+        </div>
+        <div class="video-thumbnail" onclick="playVideo('https://www.youtube.com/embed/-gsIHhVUag4')">
+            <img src="https://img.youtube.com/vi/-gsIHhVUag4/0.jpg" alt="Video Thumbnail 3">
+        </div>
+        <div class="video-thumbnail" onclick="playVideo('https://www.youtube.com/embed/TyD2fvGFpao')">
+            <img src="https://img.youtube.com/vi/TyD2fvGFpao/0.jpg" alt="Video Thumbnail 4">
+        </div>
+    </section>
+
+    <section id="video-player" class="hidden">
+        <iframe id="video-frame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <button onclick="showContactDetails()">Contact Me</button>
+        <div id="contact-details" class="hidden">
+            <div class="contact-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="contact-logo">
+                <a href="https://insta.openinapp.co/xghqo" target="_blank">Instagram</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Logo" class="contact-logo">
+                <a href="mailto:deepanshh245@gmail.com">deepanshh245@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-zhbzj&psig=AOvVaw3Um_4DvJs2J1C6BMhljibD&ust=1722510115759000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCxtZeQ0YcDFQAAAAAdAAAAABAJ" alt="Phone Logo" class="contact-logo">
+                <p>+91 8595760656</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
